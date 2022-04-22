@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arr = [13,14,124.675,213,65,123,878,4332];
+    let index = +prompt('nhap so index: ');
+
+    function tryRemoveFromArray(arr, index) {
+        document.write(`mảng gồm các phần tử: ${arr} <br>`);
+        for (let i = 0; i < arr.length; i++) {
+            if (arr[i] === arr[arr.indexOf(index)]) {
+                arr.splice(arr.indexOf(index), 1);
+                document.write(`mảng trên có số ${index} trùng <br>`);
+            }
+        }
+        document.write(`mảng mới gồm các phần tử là : ${arr}`);
+    }
+
+    tryRemoveFromArray(arr, index);
+</script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<script>
+    let max3 = []
+
+    function findMax3(arr) {
+        let max = arr[0];
+        let n = 0;
+        for (let i = 1; i < arr.length; i++) {
+            if (max < arr[i]) {
+                max = arr[i]
+                n = i;
+            }
+        }
+        arr.splice(n, 1)
+        max3.push(max)
+    }
+
+    example = [7, 8, 9, 5, 10, 6, 12, 15, 16]
+    for (let i = 0; i < 3; i++) {
+        findMax3(example)
+        console.log(example)
+    }
+    alert(max3[2])
+
+
+</script>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 4</title>
+</head>
+<body>
+<canvas id="mycanvas" width="500" height="500" style="border: 1px solid"></canvas>
+<script>
+
+    class Rectangle {
+        constructor() {
+            this.width = number;
+            this.height = number;
+            this.x = nunber;
+            this.y = number;
+            this.color = color;
+        }
+    }
+
+    let render = document.getElementById("mycanvas");
+    let ctx = render.getContext("2d");
+    ctx.beginPath();
+    ctx.rect(10, 10, 200, 100);
+    ctx.fillStyle = `#000000`
+    ctx.fill();
+    ctx.stroke();
+
+</script>
+</body>
+</html>
